@@ -41,6 +41,15 @@ class ListPosts extends Component
         $this->getPosts();
     }
 
+    public function delete(Post $post): void
+    {
+        $this->authorize('delete', $post);
+
+        $post->delete();
+
+        $this->getPosts();
+    }
+
     public function render()
     {
         return view('livewire.posts.list-posts');
