@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Posts;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class ListPosts extends Component
 {
     public function render()
     {
-        return view('livewire.list-posts');
+        return view('livewire.posts.list-posts');
     }
 }
