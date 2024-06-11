@@ -21,6 +21,6 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.chirps.create');
+        return view('livewire.posts.create');
     }
 }
