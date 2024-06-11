@@ -5,7 +5,8 @@
     <div class="flex-1">
         <div class="flex items-center justify-between">
             <a href="{{ route('posts.show', $post) }}">
-                <div>
+                <div class='flex items-center gap-x-2'>
+                    <p class="text-sm text-gray-800">{{ $post->id }}</p>
                     <span class="text-gray-800">
                         <strong>{{ $post->user->name }}</strong>
                     </span>
