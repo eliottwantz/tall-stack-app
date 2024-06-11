@@ -1,23 +1,3 @@
-<?php
-
-use Livewire\Volt\Component;
-use Livewire\Attributes\Validate;
-
-new class extends Component {
-    #[Validate('required|string|min:1|max:255')]
-    public string $message = '';
-
-    public function store(): void
-    {
-        $validated = $this->validate();
-
-        auth()->user()->posts()->create($validated);
-
-        $this->message = '';
-    }
-};
-?>
-
 <div>
     <form wire:submit='store'>
         <textarea wire:model='message' placeholder="What's on your mind?"
