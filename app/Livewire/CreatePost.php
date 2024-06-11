@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Livewire\Chirps;
+namespace App\Livewire;
 
 use Livewire\Component;
 
-class Create extends Component
+class CreatePost extends Component
 {
     public string $message = '';
 
@@ -21,6 +21,6 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.posts.create');
+        return view('livewire.create-post');
     }
 }
