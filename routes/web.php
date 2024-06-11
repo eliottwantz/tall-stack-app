@@ -14,8 +14,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get("/posts", [PostController::class, 'index'])
-    ->middleware(['auth', 'verified'])
-    ->name("posts");
+Route::resource("/posts", PostController::class)
+    ->only(['index', 'show'])
+    ->middleware(['auth', 'verified']);
 
 require __DIR__ . '/auth.php';

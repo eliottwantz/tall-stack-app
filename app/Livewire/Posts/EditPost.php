@@ -10,7 +10,6 @@ class EditPost extends Component
 {
     public Post $post;
 
-    #[Validate('required|string|min:3|max:255')]
     public string $message = '';
 
     public function mount(): void
