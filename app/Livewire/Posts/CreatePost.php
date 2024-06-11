@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Posts;
 
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class CreatePost extends Component
@@ -17,6 +18,8 @@ class CreatePost extends Component
         auth()->user()->posts()->create($validated);
 
         $this->message = '';
+
+        $this->dispatch('post-created');
     }
 
     public function render()
