@@ -1,5 +1,6 @@
 <div class='flex flex-col mt-6 gap-y-6'>
 
+
     <div id="posts" class='flex flex-col rounded-lg gap-y-3'>
         @foreach ($posts as $post)
         <div>
@@ -8,7 +9,7 @@
         @endforeach
     </div>
 
-    {{ $posts->links(data: ['scrollTo' => '#posts']) }}
+    {{ $posts->links() }}
     <button class="scroll-to-top" x-data @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
         Scroll to Top
     </button>

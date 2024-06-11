@@ -3,8 +3,6 @@
 namespace App\Livewire\Posts;
 
 use App\Models\Post;
-use Illuminate\Database\Eloquent\Collection;
-use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithPagination;
 
