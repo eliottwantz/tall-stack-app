@@ -1,7 +1,6 @@
 # TALL Stack App
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/eliottwantz/tall-stack-app/main/.github/demo.gif" alt="Demo Gif">
     <img src=".github/demo.gif" alt="Demo Gif">
 </p>
 
